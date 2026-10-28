@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "adamarajam-safeval_jd253"
+version = "0.1.0"
+description = "用一组明示的正则规则扫描输入，报告模型安全评测负责人·长工具链的上下文回收相关的命中行与片段"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "adamarajam" }]
+keywords = ["llm", "cli", "analysis", "observability"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://adamarajam.github.io"
+Repository = "https://github.com/adamarajam/safeval_jd253"
+Issues = "https://github.com/adamarajam/safeval_jd253/issues"
+
+[project.scripts]
+safeval_jd253 = "safeval_jd253:main"
+
+[tool.setuptools]
+py-modules = ["safeval_jd253"]
